@@ -1,0 +1,12 @@
+.register-background {
+    background-image: url(${job3});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .register-page {
+  background-image: url("../../../assets/job-bg1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
