@@ -9,8 +9,8 @@ const userNav = [
   { name: "Home", href: "#", current: true },
   { name: "Services", href: "#", current: false },
   { name: "About", href: "#", current: false },
-  { name: "login", href: "/login", current: false },
-  { name: "register", href: "#", current: false },
+  { name: "login", href: "/signin", current: false },
+  { name: "register", href: "/user-register", current: false },
 
 ];
 
@@ -19,6 +19,7 @@ const Navbar = () => {
     <Disclosure as="nav" className="bg-transparent">
       {({ open }) => (
         <>
+        <div className="absolute top-0 left-0 bottom-7px w-full bg-opacity-80 bg-gray-800 flex flex-col justify-center items-center">
           <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
             <div className="relative flex items-center justify-between h-20">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -75,7 +76,7 @@ const Navbar = () => {
                 {/* Add your content here for the right side of the navbar */}
               {/* </div> */}
             </div>
-          </div>
+          </div></div>
 
           {/* Mobile menu */}
           <Disclosure.Panel className="sm:hidden">
@@ -98,7 +99,9 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
+
           </Disclosure.Panel>
+          
         </>
       )}
     </Disclosure>

@@ -10,6 +10,7 @@ import { Provider } from 'react-redux'
 import Store from './Redux/Store'
 import VerifyOTP from './Components/Pages/VerifyOtp/VerifyOtp';
 // import './App.css'
+import Footer from './Components/Footer/Footer';
 
 function App() {
   
@@ -28,7 +29,7 @@ function App() {
         <Route path='/recruiter-register' element={<RecruiterRegister/>}/>
         <Route path='/verify-otp' element={<VerifyOTP/>}/>
       </Routes>
-     
+      <Footer/>
       </AuthProvider>
     </div>
     </Provider>
